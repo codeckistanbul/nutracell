@@ -15,24 +15,24 @@ const uglify = require('gulp-uglify-es').default;
 const header = require('gulp-header');
 const imagemin = require('gulp-imagemin');
 const data = require('gulp-data');
-
+const htmlmin = require('gulp-htmlmin');
+const foreach = require('gulp-foreach');
 
 const templates = './src/templates/';
 const dist = './dist/';
 const homePath = './src/assets/';
 const nodeModules = './node_modules/';
-const foreach = require('gulp-foreach');
-const injectSvgOptions = {base: './dist/'};
+
 
 
 const paths = {
     js: 'assets/js/',
-    css: 'assets/css/',
-    icons: 'assets/icons/'
+    css: 'assets/css/'
 };
 
 const sourceJs = [
     nodeModules + 'jquery/dist/jquery.js',
+    nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
     nodeModules + 'wowjs/dist/wow.min.js',
     homePath + 'js/main.js',
@@ -43,6 +43,7 @@ const sourceSass = [
 ];
 
 
+
 function compile() {
     const dataSource = require('./data.json');
     return gulp.src('./src/templates/pages/*.html')
@@ -51,6 +52,7 @@ function compile() {
             return stream
                 .pipe(twig({base: './src/templates'}))
         }))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(dist))
         .pipe(connect.reload());
 }
@@ -117,7 +119,6 @@ function myWatchTasks() {
     gulp.watch(['./src/assets/js/*.js'], scriptsDev);
     gulp.watch(['./src/templates/**/*.html'], compile);
 }
-
 
 const dev = gulp.parallel(gulp.series(clean, style, copyFiles, scriptsDev, compile, connectGulp), myWatchTasks);
 const build = gulp.series(clean, style, copyFiles, scripts, compile);

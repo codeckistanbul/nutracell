@@ -1,7 +1,9 @@
 {# templates/layout.index.html #}
 <html lang="tr">
-{% include 'partials/head.html %}
+{% include 'partials/head.html' %}
 <body>
+{% include 'partials/top-info.html' %}
+{% include 'partials/nav.html' %}
 {% block content %}
 {% endblock %}
 {% include 'partials/footer.html' %}

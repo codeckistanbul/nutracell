@@ -16,6 +16,10 @@
     "url": "https://gitlab.com/iciniz/nutracell/issues"
   },
   "homepage": "https://gitlab.com/iciniz/nutracell#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "gulp-htmlmin": "^5.0.1"
+  },
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "autoprefixer": "^9.7.4",

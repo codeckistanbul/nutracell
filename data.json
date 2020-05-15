@@ -1,3 +1,23 @@
 {
-
+  "title": "Nutracell",
+  "navbar": [
+    {
+      "text": "Hakkımızda"
+    },
+    {
+      "text": "Ürünlerimiz"
+    },
+    {
+      "text": "Üretim"
+    },
+    {
+      "text": "Karnitin"
+    },
+    {
+      "text": "Zerdeçal"
+    },
+    {
+      "text": "İletişim"
+    }
+  ]
 }
