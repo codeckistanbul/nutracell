@@ -66,5 +66,131 @@
 
 
 
+  ],
+  "product_info": [
+    {
+      "rotation": "flex-row",
+      "text_rotation": "text-left",
+      "self_rotation": "align-self-start",
+      "image": "lemon-drink",
+      "content": "Kolajen cildimiz, kemik ve kıkırdak dokularımızda bulunan en önemli proteindir ve yaş ilerledikçe vücutta üretimi azalır. L-Karnitin yağ yakımı tetiklemeyen bir amino asitdir. Lif özellikle probiyotik etkisi ile bağırsak fonksiyonlarını düzenler ve uzun süreli tokluk hissi oluşturarak kili vermenizi kolaylaştırır. Demir vücudumuzda oksijeni taşıyan, enerji üretimini direkt etkileyen yegane mineraldir ve eksikliği hücre, doku ve organlara taşınan oksijen miktarında azalmaya neden olur. Abfortis yanmaya yol açmaz. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.",
+      "title": "L-Karnitin Kolajen",
+      "vitamins": [
+        {
+          "text": "Vitaminler",
+          "value1": "100ml*",
+          "value2": "330ml"
+        },
+        {
+          "text": "Vitamin A",
+          "value1": "121,2 µg *",
+          "value2": "400 µg %50 RA"
+        },
+        {
+          "text": "Vitamin C",
+          "value1": "12,2mg",
+          "value2": "40mg %50 RA"
+        },
+        {
+          "text": "Vitamin D",
+          "value1": "0,75 µg",
+          "value2": "2,5 µg %50 RA"
+        },
+        {
+          "text": "Vitamin E",
+          "value1": "1,81 mg",
+          "value2": "6mg %50 RA"
+        }
+      ],
+      "minerals": [
+        {
+          "text": "Çinko",
+          "value1": "100ml*",
+          "value2": "330ml"
+        },
+        {
+          "text": "Selenyum",
+          "value1": "121,2 µg *",
+          "value2": "400 µg %50 RA"
+        },
+        {
+          "text": "Magnezyum",
+          "value1": "12,2mg",
+          "value2": "40mg %50 RA"
+        },
+        {
+          "text": "Demir",
+          "value1": "0,75 µg",
+          "value2": "2,5 µg %50 RA"
+        },
+        {
+          "text": "Lif",
+          "value1": "1,81 mg",
+          "value2": "6mg %50 RA"
+        }
+      ]
+    },
+    {
+      "rotation": "flex-row-reverse",
+      "text_rotation": "text-right",
+      "self_rotation": "align-self-end",
+      "image": "peach-drink",
+      "content": "Novasol Curcumin zerdeçalda bulunan kurkuminoidlerin patentli yöntem ile çıkartılıp vücudumuzda etkili bir yapıya dönüştürülmüş bir halidir. 570mg Novasol Curcumin içinde toplam 48mg kurkuminoid bulunur. Kurkuminoidlerin iltihap önleyici, antioksidan etkilerinin yanında kalp, damar ve beyin sağlığı üzerindeki olumlu etkileri araştırmaları ile desteklenmektedir. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.",
+      "title": "Zerdeçal",
+      "vitamins": [
+        {
+          "text": "Vitaminler",
+          "value1": "100ml*",
+          "value2": "330ml"
+        },
+        {
+          "text": "Vitamin A",
+          "value1": "121,2 µg *",
+          "value2": "400 µg %50 RA"
+        },
+        {
+          "text": "Vitamin C",
+          "value1": "12,2mg",
+          "value2": "40mg %50 RA"
+        },
+        {
+          "text": "Vitamin D",
+          "value1": "0,75 µg",
+          "value2": "2,5 µg %50 RA"
+        },
+        {
+          "text": "Vitamin E",
+          "value1": "1,81 mg",
+          "value2": "6mg %50 RA"
+        }
+      ],
+      "minerals": [
+        {
+          "text": "Çinko",
+          "value1": "100ml*",
+          "value2": "330ml"
+        },
+        {
+          "text": "Selenyum",
+          "value1": "121,2 µg *",
+          "value2": "400 µg %50 RA"
+        },
+        {
+          "text": "Magnezyum",
+          "value1": "12,2mg",
+          "value2": "40mg %50 RA"
+        },
+        {
+          "text": "Demir",
+          "value1": "0,75 µg",
+          "value2": "2,5 µg %50 RA"
+        },
+        {
+          "text": "Lif",
+          "value1": "1,81 mg",
+          "value2": "6mg %50 RA"
+        }
+      ]
+    }
   ]
 }

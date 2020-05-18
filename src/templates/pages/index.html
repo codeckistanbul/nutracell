@@ -31,11 +31,13 @@
         <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd </p>
     </div>
 </section>
-<section class="product-info d-flex container">
-    <div class="left-side">
-        <img src="assets/img/svg/nutracell-logo.svg" alt="">
-        <h1>L-Karantin Kolajen</h1>
-        <p>Kolajen cildimiz, kemik ve kıkırdak dokularımızda bulunan en önemli proteindir ve yaş ilerledikçe vücutta üretimi azalır. L-Karnitin yağ yakımı tetiklemeyen bir amino asitdir. Lif özellikle probiyotik etkisi ile bağırsak fonksiyonlarını düzenler ve uzun süreli tokluk hissi oluşturarak kili vermenizi kolaylaştırır. Demir vücudumuzda oksijeni taşıyan, enerji üretimini direkt etkileyen yegane mineraldir ve eksikliği hücre, doku ve organlara taşınan oksijen miktarında azalmaya neden olur. Abfortis yanmaya yol açmaz. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.</p>
+
+{% for products in product_info%}
+<section class="product-info d-flex container {{products.rotation}}">
+    <div class="left-side d-flex flex-column">
+        <img class="{{products.self_rotation}}" src="assets/img/svg/nutracell-logo.svg" alt="">
+        <h1 class="{{products.text_rotation}}">{{products.title}}</h1>
+        <p class="{{products.text_rotation}}">{{products.content}}</p>
         <div class="d-flex justify-content-between align-items-center">
             <h1>Besin Değeri</h1>
             <div class="d-flex align-items-center">
@@ -43,7 +45,7 @@
                 <h2>330ml(Kutu Boyutu)</h2>
             </div>
         </div>
-        <div class="product-values row">
+        <div class="product-values row {{products.rotation}}">
             {% for value in product_values %}
             <div class="d-flex align-items-center ">
                 <img src="assets/img/svg/product-images/{{value.image}}.svg" alt="">
@@ -55,11 +57,40 @@
             {% endfor %}
         </div>
     </div>
-    <div class="right-side">
-        <img src="assets/img/backgrounds/product-image.png" alt="">
+    <div class="right-side ">
+        <img src="assets/img/backgrounds/{{products.image}}.png" alt="">
     </div>
 </section>
+<section class="tables container ">
+    <h1 class="{{products.text_rotation}}">Vitaminler Tablosu</h1>
+    <table>
+        {% for tableitems in products.vitamins %}
+        <tr>
+            <td>{{tableitems.text}}</td>
+            <td>{{tableitems.value1}}</td>
+            <td>{{tableitems.value2}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 
+
+    <h1 class="{{products.text_rotation}}">Mineraller</h1>
+    <table>
+        {% for tableitems in products.minerals %}
+        <tr>
+            <td>{{tableitems.text}}</td>
+            <td>{{tableitems.value1}}</td>
+            <td>{{tableitems.value2}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <span>* Değerler ortalama bir yetişkin referans alım düzeyini belirtir(2000kcal / 8700kj)</span>
+
+</section>
+{% endfor %}
+<section class="video">
+<iframe src="https://www.youtube.com/embed/JadP617xccM" frameborder="2"  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
+</section>
 
 
 
