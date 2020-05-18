@@ -36,6 +36,26 @@
         <img src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1>L-Karantin Kolajen</h1>
         <p>Kolajen cildimiz, kemik ve kıkırdak dokularımızda bulunan en önemli proteindir ve yaş ilerledikçe vücutta üretimi azalır. L-Karnitin yağ yakımı tetiklemeyen bir amino asitdir. Lif özellikle probiyotik etkisi ile bağırsak fonksiyonlarını düzenler ve uzun süreli tokluk hissi oluşturarak kili vermenizi kolaylaştırır. Demir vücudumuzda oksijeni taşıyan, enerji üretimini direkt etkileyen yegane mineraldir ve eksikliği hücre, doku ve organlara taşınan oksijen miktarında azalmaya neden olur. Abfortis yanmaya yol açmaz. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Besin Değeri</h1>
+            <div class="d-flex align-items-center">
+                <span>100 ML</span>
+                <h2>330ml(Kutu Boyutu)</h2>
+            </div>
+        </div>
+        <div class="product-values">
+            {% for value in product_values %}
+            <div class="d-flex align-items-center">
+                <img src="assets/img/svg/product-images/{{value.image}}.svg" alt="">
+                <div>
+                    <p>{{value.text}}</p>
+                    <p>{{value.value}}</p>
+                </div>
+            </div>
+            {{value.space}}
+
+            {% endfor %}
+        </div>
     </div>
     <div class="right-side">
         <img src="assets/img/backgrounds/product-image.png" alt="">

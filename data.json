@@ -19,5 +19,52 @@
     {
       "text": "İletişim"
     }
+  ],
+  "product_values": [
+    {
+      "image": "product-man1",
+      "text": "Enerji (kJ/kcal)",
+      "value": "39/9"
+    },
+    {
+      "image": "product-man2",
+      "text": "Protein",
+      "value": "0,5gr"
+    },
+    {
+      "image": "sugar-cube",
+      "text": "Şeker",
+      "value": "0,1gr"
+
+    },
+    {
+      "image": "yag",
+      "text": "Yağ",
+      "value": "0"
+    },
+    {
+      "image": "yag",
+      "text": "Doymuş Yağ",
+      "value": "0"
+    },
+    {
+      "image": "lif",
+      "text": "Lif",
+      "value": "2gr"
+
+    },
+    {
+      "image": "grain",
+      "text": "Karbonhidrat",
+      "value": "2,1gr"
+    },
+    {
+      "image": "salt",
+      "text": "Tuz",
+      "value": "0,1gr"
+    }
+
+
+
   ]
 }
