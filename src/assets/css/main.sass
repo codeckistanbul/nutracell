@@ -1,10 +1,21 @@
+body
+  overflow-x: hidden
+
 #leaves
   background-image: url("../../assets/img/backgrounds/leaves.png")
-  background-size: cover
-  position: absolute
+  left: -200px
 
 #orange
   background-image: url("../../assets/img/backgrounds/orange.png")
+  right: -200px
+  background-position: right
+
+.background-images
+  background-size: contain
+  position: absolute
+  background-repeat: no-repeat
+  width: 30%
+  height: 50vh
 
 
 
@@ -78,3 +89,25 @@ div.content
   p
     font-family: $primary-font
     line-height: 30px
+
+
+section.product-info
+  margin-top: 200px
+
+
+  div.left-side
+    h1,p
+      font-family: $primary-font
+
+    h1
+      font-size: 30px
+      font-weight: 600
+      margin: 10px 0
+
+    p
+      line-height: 40px
+      padding-right: 30px
+
+    img
+      width: 20%
+
