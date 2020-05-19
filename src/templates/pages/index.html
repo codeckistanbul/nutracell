@@ -1,19 +1,26 @@
 {% extends "layouts/layout.index.html" %}
 {% block content %}
 
-<section class="slider container-fluid d-flex align-items-center justify-content-center">
-    <div class="col-5 d-flex justify-content-end" id="slide-image">
-        <img class="col-10" src="assets/img/slider-images/drink-cans.png" alt="">
-    </div>
-    <div class="slide-text col-5">
-        <h3>Nutracell Multivitaminli</h3>
-        <h1>Sağlıklı ve <span>Lezzetli!</span></h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
-        <div class="buttons">
-            <a href="#!">Mağazamızdan Sipariş Ver</a>
-            <a href="#!">Ürün Hakkında</a>
+<section class="slider container-fluid  align-items-center justify-content-center">
+    <div id="slider" >
+        {% for slide in slider %}
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="col-5 d-flex justify-content-end" id="slide-image">
+                <img class="col-10" src="assets/img/slider-images/drink-cans.png" alt="">
+            </div>
+            <div class="slide-text col-5">
+                <h3>Nutracell Multivitaminli</h3>
+                <h1>Sağlıklı ve <span>Lezzetli!</span></h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
+                <div class="buttons">
+                    <a href="#!">Mağazamızdan Sipariş Ver</a>
+                    <a href="#!">Ürün Hakkında</a>
+                </div>
+            </div>
         </div>
+        {% endfor %}
     </div>
+
 </section>
 
 <section class="explore">
@@ -92,18 +99,9 @@
 <iframe src="https://www.youtube.com/embed/JadP617xccM" frameborder="2"  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
 </section>
 <section class="benefits ">
-    <div class="col-5">
-    <img class="col-10" src="assets/img/carnitinbenefits.png" alt=""/>
-    </div>
-    <div class="col-12 align-items-end d-flex flex-column">
-        <div class="info d-flex align-self-center justify-content-center">
-            <span></span>
-            <div>
-                <h3>Bilgilenelim</h3>
-                <h1>L-Carnitinin Yararları</h1>
-            </div>
-        </div>
-        <p class="col-10">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+    <div>
+        <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+
     </div>
 </section>
 
