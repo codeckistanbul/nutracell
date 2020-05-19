@@ -1,12 +1,64 @@
 footer
   font-family: $primary-font
-  position: absolute
+  position: relative
   bottom: 0
 
+  div.logo-and-socials
+    div
+      margin: 10px 0
+      a
+        margin-left: 10px
+        &:first-child
+          margin: 0
+
+  p
+    color: #E22000
+    font-weight: 600
+    margin: 10px
+
+
   div
+    padding: 50px
+    background-color: #ffffff
+
     a
       text-decoration: none
       color: $default-black
+      &:hover
+        color: unset
 
-  .reserved
+    div
+      margin: 0 10px
+      padding: 0
+
+      h1
+        font-weight: 600
+        font-size: 15px
+
+      a
+        margin-top: 10px
+        font-weight: 200
+        font-size: 13px
+
+  div.reserved
     background-color: $standard-color
+    width: 100%
+    padding: 10px 0
+    p
+      color: #fff
+
+  div.communication
+    max-width: 22%
+    a
+      margin: 0 0 0 10px
+
+    p
+      color: $default-black
+      font-weight: 200
+      font-size: 13px
+      margin: 0 0 0 10px
+
+    .phone,.address,.mail
+      margin: 10px 0 0 0
+      div
+        margin: 0

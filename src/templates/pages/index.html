@@ -4,17 +4,17 @@
 <section class="slider container-fluid  align-items-center justify-content-center">
     <div id="slider" >
         {% for slide in slider %}
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="col-5 d-flex justify-content-end" id="slide-image">
-                <img class="col-10" src="assets/img/slider-images/drink-cans.png" alt="">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <div class="col-8 col-sm-5 d-flex justify-content-end" id="slide-image">
+                <img class="col-12 col-md-10" src="assets/img/slider-images/drink-cans.png" alt="">
             </div>
-            <div class="slide-text col-5">
-                <h3>Nutracell Multivitaminli</h3>
-                <h1>Sağlıklı ve <span>Lezzetli!</span></h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
-                <div class="buttons">
-                    <a href="#!">Mağazamızdan Sipariş Ver</a>
-                    <a href="#!">Ürün Hakkında</a>
+            <div class="slide-text justify-content-center col-10 col-md-5">
+                <h3 class="text-center text-md-left">Nutracell Multivitaminli</h3>
+                <h1 class="text-center text-md-left">Sağlıklı ve <span>Lezzetli!</span></h1>
+                <p class="text-center text-md-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
+                <div class="buttons d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+                    <a href="#!" class="text-center">Mağazamızdan Sipariş Ver</a>
+                    <a href="#!" class="text-center">Ürün Hakkında</a>
                 </div>
             </div>
         </div>
@@ -99,11 +99,42 @@
 <iframe src="https://www.youtube.com/embed/JadP617xccM" frameborder="2"  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
 </section>
 <section class="benefits ">
-    <div>
-        <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
-
+    <div class="d-flex align-items-center flex-row">
+        <div class="benefits-image">
+            <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+        </div>
+        <div class="benefits-content">
+            <div class="d-flex">
+                <span></span>
+                <div>
+                    <h3>Bilgilenelim</h3>
+                    <h1>Z-Karnitin Faydaları</h1>
+                </div>
+            </div>
+            <div class="benefits-text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center flex-row-reverse">
+        <div class="benefits-image">
+            <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+        </div>
+        <div class="benefits-content">
+            <div class="d-flex flex-row-reverse">
+                <span></span>
+                <div>
+                    <h3 class="text-right">Bilgilenelim</h3>
+                    <h1 class="text-right">Zerdeçal</h1>
+                </div>
+            </div>
+            <div class="benefits-text">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+            </div>
+        </div>
     </div>
 </section>
+{% include 'partials/page-footer.html' %}
 
 
 
