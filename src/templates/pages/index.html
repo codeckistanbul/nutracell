@@ -40,7 +40,7 @@
 </section>
 
 {% for products in product_info%}
-<section class="product-info d-flex container align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
+<section id="{{products.id}}" class="product-info d-flex container align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
     <div class="left-side d-flex flex-column">
         <img class="{{products.self_rotation}}" src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1 class="{{products.text_rotation}}">{{products.title}}</h1>
@@ -52,7 +52,7 @@
                 <h2>330ml(Kutu Boyutu)</h2>
             </div>
         </div>
-        <div class="product-values row {{products.rotation}}">
+        <div class="product-values row justify-content-center justify-content-lg-start {{products.rotation}}">
             {% for value in product_values %}
             <div class="d-flex align-items-center ">
                 <img src="assets/img/svg/product-images/{{value.image}}.svg" alt="">
@@ -95,9 +95,11 @@
 
 </section>
 {% endfor %}
+
 <section class="video">
-<iframe src="https://www.youtube.com/embed/JadP617xccM" frameborder="2"  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/JadP617xccM" id="ytplayer" color="white" frameborder="0" showinfo  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
 </section>
+
 <section class="benefits ">
     <div class="d-flex align-items-center flex-row">
         <div class="benefits-image">

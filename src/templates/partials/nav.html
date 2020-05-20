@@ -4,7 +4,7 @@
     </div>
     <div class="links d-none d-lg-flex">
         {% for navlinks in navbar%}
-        <a href="#!" class="nav-active">
+        <a href="{{navlinks.href}}" class="nav-active">
             <p>{{navlinks.text}}</p>
         </a>
         {% endfor %}
