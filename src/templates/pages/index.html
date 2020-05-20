@@ -40,7 +40,7 @@
 </section>
 
 {% for products in product_info%}
-<section class="product-info d-flex container {{products.rotation}}">
+<section class="product-info d-flex container align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
     <div class="left-side d-flex flex-column">
         <img class="{{products.self_rotation}}" src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1 class="{{products.text_rotation}}">{{products.title}}</h1>
