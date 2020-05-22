@@ -1,5 +1,5 @@
 variables:
-  FOLDER: "/home/ubuntu/apps/iciniz/"
+  FOLDER: "/home/ubuntu/apps/iciniz/nutracell"
 
 stages:
   - build
