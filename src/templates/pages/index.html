@@ -6,15 +6,15 @@
         {% for slide in slider %}
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <div class="col-8 col-sm-5 d-flex justify-content-end" id="slide-image">
-                <img class="col-12 col-md-10" src="assets/img/slider-images/drink-cans.png" alt="">
+                <img class="col-12 col-md-10" src="assets/img/slider-images/{{slide.image}}" alt="">
             </div>
             <div class="slide-text justify-content-center col-10 col-md-5">
-                <h3 class="text-center text-md-left">Nutracell Multivitaminli</h3>
-                <h1 class="text-center text-md-left">Sağlıklı ve <span>Lezzetli!</span></h1>
+                <h3 class="text-center text-md-left">{{slide.title1}}</h3>
+                <h1 class="text-center text-md-left">{{slide.title2}}</h1>
                 <p class="text-center text-md-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
                 <div class="buttons d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
-                    <a href="#!" class="text-center">Mağazamızdan Sipariş Ver</a>
-                    <a href="#!" class="text-center">Ürün Hakkında</a>
+                    <a href="#!" class="text-center">Sipariş Ver</a>
+                    <a href="#!" class="text-center">{{slide.aboutproduct}}</a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
 </section>
 
-<section class="explore">
+<section id="aboutus" class="explore">
     <div>
         <h1>Keşfet</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="10.485" height="6.242" viewBox="0 0 10.485 6.242">
@@ -32,15 +32,24 @@
     </div>
     <div class="background-images" id="leaves"></div>
     <div class="background-images" id="orange"></div>
-    <div class="content container d-flex flex-column">
+    <div  class="content container d-flex flex-column">
         <img src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1>Hakkında</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd </p>
+        <p class="text-center"><strong>Nutracell, senin yaşam tarzına uygun bir şekilde seni
+            desteklemesi ve yenilemesi için üretildi!</strong><br><br>
+            Spor yaparken ya da günlük hayatta dengeli beslenmek pek
+            mümkün olmuyor. Günlük almamız gereken vitamin ve mineralleri
+            doğru ve yeterli oranda alamıyoruz. Ya almamız gereken değerleri
+            bilmiyoruz ya da hesaplamak zor geliyor. <br><br>
+            Nutracell ürünleri, kullandığı yüksek teknolojiler sayesinde, ihtiyacın
+            olan vitamin ve mineralleri sana optimum takviyeyi sağlamak için
+            tasarlandı. Üstelik ürünlerimiz şeker içermiyor! <br><br>
+            <strong>Ürünlerimizde kullandığımız teknolojiler:</strong></p>
     </div>
 </section>
 
 {% for products in product_info%}
-<section id="{{products.id}}" class="product-info d-flex container align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
+<section id="{{products.id}}" class="product-info d-flex container-fluid container-md align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
     <div class="left-side d-flex flex-column">
         <img class="{{products.self_rotation}}" src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1 class="{{products.text_rotation}}">{{products.title}}</h1>
@@ -96,28 +105,29 @@
 </section>
 {% endfor %}
 
-<section class="video">
+<section class="video" id="uretim">
 <iframe src="https://www.youtube.com/embed/JadP617xccM" id="ytplayer" color="white" frameborder="0" showinfo  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
 </section>
 
 <section class="benefits ">
-    <div class="d-flex align-items-center flex-row">
-        <div class="benefits-image">
+
+    <div style="position: relative;z-index: 1;">
+        <div class="d-flex align-items-center ">
             <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
-        </div>
-        <div class="benefits-content">
-            <div class="d-flex">
-                <span></span>
+            <div>
                 <div>
-                    <h3>Bilgilenelim</h3>
-                    <h1>Z-Karnitin Faydaları</h1>
+                <span></span>
+                    <div>
+                        <h1>ASLFM</h1>
+                        <h3>SLAMFLMAS</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="benefits-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+            <div><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p></div>
             </div>
         </div>
+        <div style="border-radius: 100px 0 0 250px; left: 90px; z-index:-1;top: 175px; position: absolute;background-color: #F0F1FA;height: 350px;width: 90%"></div>
     </div>
+
     <div class="d-flex align-items-center flex-row-reverse">
         <div class="benefits-image">
             <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
@@ -136,6 +146,7 @@
         </div>
     </div>
 </section>
+
 {% include 'partials/page-footer.html' %}
 
 

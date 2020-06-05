@@ -4,12 +4,14 @@ footer
   bottom: 0
 
   div.logo-and-socials
-    div
+    max-width: 22%
+    .socials
       margin: 10px 0
-      a
-        margin-left: 10px
-        &:first-child
-          margin: 0
+
+      img
+        padding: 10px
+
+
 
   p
     color: #E22000
@@ -18,7 +20,7 @@ footer
 
 
   div
-    padding: 50px
+    padding: 0 50px
     background-color: #ffffff
 
     a
@@ -27,8 +29,11 @@ footer
       &:hover
         color: unset
 
+    div.communication
+      margin: 0
+
     div
-      margin: 0 10px
+      margin: 0 35px
       padding: 0
 
       h1
@@ -43,14 +48,19 @@ footer
   div.reserved
     background-color: $standard-color
     width: 100%
-    padding: 10px 0
+    padding: 1px 0
     p
       color: #fff
 
   div.communication
-    max-width: 22%
-    a
+    div.numbers
       margin: 0 0 0 10px
+      a
+        margin: 0
+
+    div.mail
+      a
+        margin: 0 0 0 10px
 
     p
       color: $default-black
@@ -60,5 +70,3 @@ footer
 
     .phone,.address,.mail
       margin: 10px 0 0 0
-      div
-        margin: 0

@@ -3,18 +3,18 @@
   "navbar": [
     {
       "text": "Hakkımızda",
-      "href": "#!"
+      "href": "#aboutus"
     },
     {
       "text": "Ürünlerimiz",
-      "href": "#!"
+      "href": "#karnitin"
     },
     {
       "text": "Üretim",
-      "href": "#!"
+      "href": "#uretim"
     },
     {
-      "text": "Karnitin",
+      "text": "L-Karnitin",
       "href": "#karnitin"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "text": "İletişim",
-      "href": "#!"
+      "href": "#contact"
     }
   ],
   "product_values": [
@@ -91,22 +91,22 @@
         {
           "text": "Vitamin A",
           "value1": "121,2 µg *",
-          "value2": "400 µg %50 RA"
+          "value2": "400 µg %50"
         },
         {
           "text": "Vitamin C",
           "value1": "12,2mg",
-          "value2": "40mg %50 RA"
+          "value2": "40mg %50"
         },
         {
           "text": "Vitamin D",
           "value1": "0,75 µg",
-          "value2": "2,5 µg %50 RA"
+          "value2": "2,5 µg %50"
         },
         {
           "text": "Vitamin E",
           "value1": "1,81 mg",
-          "value2": "6mg %50 RA"
+          "value2": "6mg %50"
         }
       ],
       "minerals": [
@@ -118,22 +118,22 @@
         {
           "text": "Selenyum",
           "value1": "121,2 µg *",
-          "value2": "400 µg %50 RA"
+          "value2": "400 µg %50"
         },
         {
           "text": "Magnezyum",
           "value1": "12,2mg",
-          "value2": "40mg %50 RA"
+          "value2": "40mg %50"
         },
         {
           "text": "Demir",
           "value1": "0,75 µg",
-          "value2": "2,5 µg %50 RA"
+          "value2": "2,5 µg %50"
         },
         {
           "text": "Lif",
           "value1": "1,81 mg",
-          "value2": "6mg %50 RA"
+          "value2": "6mg %50"
         }
       ]
     },
@@ -154,22 +154,22 @@
         {
           "text": "Vitamin A",
           "value1": "121,2 µg *",
-          "value2": "400 µg %50 RA"
+          "value2": "400 µg %50"
         },
         {
           "text": "Vitamin C",
           "value1": "12,2mg",
-          "value2": "40mg %50 RA"
+          "value2": "40mg %50"
         },
         {
           "text": "Vitamin D",
           "value1": "0,75 µg",
-          "value2": "2,5 µg %50 RA"
+          "value2": "2,5 µg %50"
         },
         {
           "text": "Vitamin E",
           "value1": "1,81 mg",
-          "value2": "6mg %50 RA"
+          "value2": "6mg %50"
         }
       ],
       "minerals": [
@@ -181,35 +181,44 @@
         {
           "text": "Selenyum",
           "value1": "121,2 µg *",
-          "value2": "400 µg %50 RA"
+          "value2": "400 µg %50"
         },
         {
           "text": "Magnezyum",
           "value1": "12,2mg",
-          "value2": "40mg %50 RA"
+          "value2": "40mg %50"
         },
         {
           "text": "Demir",
           "value1": "0,75 µg",
-          "value2": "2,5 µg %50 RA"
+          "value2": "2,5 µg %50"
         },
         {
           "text": "Lif",
           "value1": "1,81 mg",
-          "value2": "6mg %50 RA"
+          "value2": "6mg %50"
         }
       ]
     }
   ],
   "slider": [
     {
-
+      "title1": "Nutracell Multivitaminli",
+      "title2": "Sağlıklı ve <span>Lezzetli!</span>",
+      "aboutproduct": "Ürünler Hakkında",
+      "image": "drink-cans.png"
     },
     {
-
+      "title1": "Nutracell L-Karnitin Kolajen ile",
+      "title2": "Formunu Koru & Cildini Besle!",
+      "aboutproduct": "L-Karnitin Hakkında",
+      "image": "girl.jpg"
     },
     {
-
+      "title1": "Nutracell Zerdeçal ile",
+      "title2": "Bağışıklık Sistemini Destekle!",
+      "aboutproduct": "Zerdeçal Hakkında",
+      "image": "happy-family.jpg"
     }
   ]
 }
