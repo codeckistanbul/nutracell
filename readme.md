@@ -2,4 +2,4 @@
 
 #TODOS
     
-    - Compile'dan hata alınıyor düzeltilecek
+    
