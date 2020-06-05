@@ -1,0 +1,38 @@
+variables:
+  FOLDER: "/home/ubuntu/apps/iciniz/nutracell"
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: node:latest
+  before_script:
+    - npm install
+    - npm install -g gulp
+  script:
+    - gulp build
+  artifacts:
+    paths:
+      - dist
+
+deploy:
+  stage: deploy
+  image: kroniak/ssh-client:3.6
+  dependencies:
+    - build
+  artifacts:
+    paths:
+      - dist
+  script:
+    - mkdir ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - scp -P 2255 -r dist/ ubuntu@$STAGING_SERVER:$FOLDER
+    - ssh -p 2255 ubuntu@$STAGING_SERVER "sudo systemctl restart nginx"
+  only:
+    - master
+  when: on_success
