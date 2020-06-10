@@ -2,7 +2,7 @@
 {% block content %}
 
 <section class="slider container-fluid  align-items-center justify-content-center">
-    <div id="slider" >
+    <div id="slider">
         {% for slide in slider %}
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <div class="col-8 col-sm-5 d-flex justify-content-end" id="slide-image">
@@ -11,7 +11,8 @@
             <div class="slide-text justify-content-center col-10 col-md-5">
                 <h3 class="text-center text-md-left">{{slide.title1}}</h3>
                 <h1 class="text-center text-md-left">{{slide.title2}}</h1>
-                <p class="text-center text-md-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br> nonumy eirmod  tempor invidunt ut labore et dolore magna aliquyam</p>
+                <p class="text-center text-md-left">{{slide.title3}}<br>
+                </p>
                 <div class="buttons d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
                     <a href="#!" class="text-center">Sipariş Ver</a>
                     <a href="#!" class="text-center">{{slide.aboutproduct}}</a>
@@ -27,12 +28,14 @@
     <div>
         <h1>Keşfet</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="10.485" height="6.242" viewBox="0 0 10.485 6.242">
-            <path id="angle-down" d="M12,15.121a1,1,0,0,1-.707-.293L7.05,10.586A1,1,0,0,1,8.464,9.172L12,12.707l3.536-3.535a1,1,0,0,1,1.414,1.414l-4.243,4.242A1,1,0,0,1,12,15.121Z" transform="translate(-6.757 -8.879)"/>
+            <path id="angle-down"
+                  d="M12,15.121a1,1,0,0,1-.707-.293L7.05,10.586A1,1,0,0,1,8.464,9.172L12,12.707l3.536-3.535a1,1,0,0,1,1.414,1.414l-4.243,4.242A1,1,0,0,1,12,15.121Z"
+                  transform="translate(-6.757 -8.879)"/>
         </svg>
     </div>
     <div class="background-images" id="leaves"></div>
     <div class="background-images" id="orange"></div>
-    <div  class="content container d-flex flex-column">
+    <div class="content container d-flex flex-column">
         <img src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1>Hakkında</h1>
         <p class="text-center"><strong>Nutracell, senin yaşam tarzına uygun bir şekilde seni
@@ -49,7 +52,8 @@
 </section>
 
 {% for products in product_info%}
-<section id="{{products.id}}" class="product-info d-flex container-fluid container-md align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
+<section id="{{products.id}}"
+         class="product-info d-flex container-fluid container-md align-items-center align-items-lg-start flex-column-reverse {{products.rotation}}">
     <div class="left-side d-flex flex-column">
         <img class="{{products.self_rotation}}" src="assets/img/svg/nutracell-logo.svg" alt="">
         <h1 class="{{products.text_rotation}}">{{products.title}}</h1>
@@ -106,31 +110,32 @@
 {% endfor %}
 
 <section class="video" id="uretim">
-<iframe src="https://www.youtube.com/embed/JadP617xccM" id="ytplayer" color="white" frameborder="0" showinfo  allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/JadP617xccM" id="ytplayer" color="white" frameborder="0" showinfo
+            allow="accelerometer; autoplay; gyroscope;" allowfullscreen></iframe>
 </section>
 
 <section class="benefits ">
 
-    <div style="position: relative;z-index: 1;">
-        <div class="d-flex align-items-center ">
-            <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+
+    <div class="d-flex align-items-center ">
+        <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+        <div class="benefits-content">
             <div>
-                <div>
                 <span></span>
-                    <div>
-                        <h1>ASLFM</h1>
-                        <h3>SLAMFLMAS</h3>
-                    </div>
+                <div>
+                    <h3>L-Karnitin</h3>
+                    <h1>Nedir?</h1>
                 </div>
-            <div><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea</p></div>
+            </div>
+            <div class="benefits-text">
+                <p>Karnitin, genellikle karaciğer ve böbreklerde sentezlenen, lizin ve metiyonin amino asitlerinden sentezlenen bir dördüncül amonyum katyonudur. Canlı hücrelerde yağların sindirimi sırasında, enerji üretimi için yağ asitlerinin stoplazmadan mitokondriye girmesinde karnitine ihtiyaç duyulur. </p>
             </div>
         </div>
-        <div style="border-radius: 100px 0 0 250px; left: 90px; z-index:-1;top: 175px; position: absolute;background-color: #F0F1FA;height: 350px;width: 90%"></div>
     </div>
 
     <div class="d-flex align-items-center flex-row-reverse">
         <div class="benefits-image">
-            <img class="" src="assets/img/carnitinbenefits.png" alt=""/>
+            <img class="" src="assets/img/curcumin.png" alt="" style="padding:50px;"/>
         </div>
         <div class="benefits-content">
             <div class="d-flex flex-row-reverse">
@@ -141,15 +146,13 @@
                 </div>
             </div>
             <div class="benefits-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea </p>
+                <p>Zerdeçal, eski çağlardan beri kullanılan şifalı bir baharattır. Yemeklere tat katmak dışında insan sağlığına sayısız faydaları vardır. Hindistan safranı olarak ta bilinen Zerdeçal, (Curcumin) besin değerleri bakımından oldukça zengindir: Bol miktarda potasyum, demir, manganez mineralleri, C vitamini ve B6 vitamini içerir. Zerdeçal günümüzde başta gıda endüstrisi olmak üzere pek çok alanda kullanılmaktadır. Cilt sağlığına faydaları nedeniyle kozmetik ürünlerine de eklenmektedir. Zerdeçal ayrıca mide ekşimesi, mide ağrısı, Crohn hastalığı, kabızlık, safra kesesi hastalığı, kolesterol ve bağırsak sendromu gibi rahatsızlıklara iyi gelmektedir.</p>
             </div>
         </div>
     </div>
 </section>
 
 {% include 'partials/page-footer.html' %}
-
-
 
 
 {% endblock %}
