@@ -1,5 +1,5 @@
 variables:
-  FOLDER: "/home/ubuntu/apps/iciniz/nutracell"
+  FOLDER: "/home/ubuntu/apps/webserver/htmls/nutracell"
 
 stages:
   - build
@@ -31,8 +31,8 @@ deploy:
     - chmod 644 ~/.ssh/known_hosts
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
-    - scp -P 2255 -r dist/ ubuntu@$STAGING_SERVER:$FOLDER
-    - ssh -p 2255 ubuntu@$STAGING_SERVER "sudo systemctl restart nginx"
+    - scp -P $SSH_PORT -r dist/ ubuntu@$STAGING_SERVER:$FOLDER
+    - ssh -p $SSH_PORT ubuntu@$STAGING_SERVER "sudo systemctl restart nginx"
   only:
     - master
   when: on_success
