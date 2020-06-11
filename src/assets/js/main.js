@@ -8,9 +8,19 @@ $('#slider').slick({
     autoplaySpeed: 10000
 });
 
-const all = $('body');
-const navBar = $('#navbar');
+const watchNow = $('.watch_now');
+const playButton = $('.play_button');
+const videoCover = $('.video_cover');
+const video = $('#ytplayer');
 
-all.scrollY(function () {
-    navBar.css('opacity','0.5')
+watchNow.click(function () {
+    video.css('display','block');
+    videoCover.css('display','none');
+
 });
+playButton.click(function () {
+    video.css('display','block');
+    videoCover.css('display','none');
+});
+
+
