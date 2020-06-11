@@ -230,43 +230,105 @@ section.video
     height: 50vh
     margin: 50px 0
 
-section.benefits
+div.benefits_main
+  position: relative
+  display: flex
+  flex-direction: column
 
-  div.benefits-image
-    position: relative
-    z-index: 1
+div.benefits_content
+  display: flex
+  justify-content: flex-end
+  background-image: linear-gradient(to right, transparent 10%, #F0F1FA)
+  margin-right: 50px
+  padding-right: 50px
 
+  p.benefits_text
+    font-family: $primary-font
+    flex-basis: 64%
+    line-height: 30px
 
+div.benefits_title_main
 
-  div.benefits-content
-    div.benefits-text
-      background-color: #F0F1FA
-      margin-right:  30px
-      padding: 20px
+  div.benefits_title
+    margin-top: 50px
+    flex-basis: 67%
+    margin-bottom: 20px
 
-      p
+    span
+      height: 40px
+      width: 5px
+      background-color: $standard-color
+
+    div.title_text
+      margin-left: 5px
+
+      h3
+        font-size: 15px
         font-family: $primary-font
-        line-height: 30px
+        color: #ACACAC
+        font-weight: bold
 
-    div
-      span
-        width: 5px
-        height: 40px
-        background-color: $standard-color
-        margin-right: 10px
 
-      div
-        h1
-          font-family: $primary-font
-          font-size: 30px
-          font-weight: 600
-          margin: 0
+      h1
+        font-size: 26px
+        font-family: $primary-font
+        font-weight: bold
 
-        h3
-          color: #ACACAC
-          font-size: 14px
-          font-weight: 600
-          font-family: $primary-font
+
+div.second_benefits_main
+  position: relative
+  display: flex
+  flex-direction: column
+  margin: 100px 0
+
+div.second_benefits_content
+  display: flex
+  justify-content: flex-start
+  background-image: linear-gradient(to left, transparent 10%, #F0F1FA)
+  margin-left: 50px
+  padding-left: 50px
+
+  p.second_benefits_text
+    font-family: $primary-font
+    flex-basis: 67%
+    line-height: 30px
+    text-align: right
+
+
+div.second_benefits_title_main
+
+  div.second_benefits_title
+    margin-top: 50px
+    flex-basis: 51%
+    margin-bottom: 20px
+
+    span
+      height: 40px
+      width: 5px
+      background-color: $standard-color
+      margin-left: 10px
+
+    div.second_title_text
+      margin-left: 5px
+
+      h3
+        font-size: 15px
+        font-family: $primary-font
+        color: #ACACAC
+        font-weight: bold
+
+
+      h1
+        font-size: 26px
+        font-family: $primary-font
+        font-weight: bold
+
+div.slick-slide
+  height: 90%
+
+
+
+
 
 
 
