@@ -16,16 +16,31 @@
     font-size: 12px
 
 @media (max-width: 1180px)
+  .benefits_main
+    align-items: center
+
   .benefits-images
-    display: none
+    position: relative!important
+    bottom: 0!important
 
   .second_benefits_text
     flex-basis: unset!important
     font-size: 20px!important
+    text-align: center!important
 
   .second_benefits_title
-    flex-basis: unset!important
-    padding: 0 30px
+    flex-basis: 100%!important
+    margin-top: 0!important
+
+    span
+      display: none
+
+  .second_benefits_title_main
+    justify-content: center!important
+
+  .second_title_text
+    h1,h3
+      text-align: center!important
 
   .second_benefits_content
     padding: 10px 30px!important
@@ -33,13 +48,20 @@
     background-image: linear-gradient(180deg,transparent 10%,#f0f1fa)!important
     justify-content: flex-end!important
 
+  .second_benefits_main
+    align-items: center
+
 
   .benefits_title_main
     justify-content: flex-start!important
 
   .benefits_title
-    padding: 0 30px
-    flex-basis: unset
+    margin-top: 0!important
+    flex-basis: unset!important
+
+    span
+      display: none
+
 
   .benefits_content
     background-image: linear-gradient(180deg,transparent 10%,#f0f1fa)!important
@@ -50,6 +72,12 @@
   .benefits_text
     flex-basis: unset!important
     font-size: 20px!important
+    text-align: center
+
+  .title_text
+    h3,h1
+      text-align: center
+
 
 
 @media (max-width: 1080px)
@@ -122,6 +150,13 @@
     height: 550px
 
 @media (max-width: 480px)
+
+  p.second_benefits_text
+    font-size: 12px!important
+
+  p.benefits_text
+    font-size: 12px!important
+
 
   .second-text
     display: none
