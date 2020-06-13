@@ -78,6 +78,7 @@
       "rotation": "flex-lg-row",
       "id": "karnitin",
       "text_rotation": "text-left",
+      "title_rotation": "text-left",
       "self_rotation": "align-self-start",
       "image": "lemon-drink",
       "content": "Kolajen cildimiz, kemik ve kıkırdak dokularımızda bulunan en önemli proteindir ve yaş ilerledikçe vücutta üretimi azalır. L-Karnitin yağ yakımı tetiklemeyen bir amino asitdir. Lif özellikle probiyotik etkisi ile bağırsak fonksiyonlarını düzenler ve uzun süreli tokluk hissi oluşturarak kili vermenizi kolaylaştırır. Demir vücudumuzda oksijeni taşıyan, enerji üretimini direkt etkileyen yegane mineraldir ve eksikliği hücre, doku ve organlara taşınan oksijen miktarında azalmaya neden olur. Abfortis yanmaya yol açmaz. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.",
@@ -140,8 +141,9 @@
     {
       "rotation": "flex-lg-row-reverse",
       "text_rotation": "text-right",
+      "title_rotation": "text-right mr-4",
       "id": "zerdecal",
-      "self_rotation": "align-self-end",
+      "self_rotation": "align-self-end mr-4",
       "image": "peach-drink",
       "content": "Novasol Curcumin zerdeçalda bulunan kurkuminoidlerin patentli yöntem ile çıkartılıp vücudumuzda etkili bir yapıya dönüştürülmüş bir halidir. 570mg Novasol Curcumin içinde toplam 48mg kurkuminoid bulunur. Kurkuminoidlerin iltihap önleyici, antioksidan etkilerinin yanında kalp, damar ve beyin sağlığı üzerindeki olumlu etkileri araştırmaları ile desteklenmektedir. Nutracell içeriğindeki vitamin ve mineraller vücudumuza optimum takviyeyi sağlayacak şekilde formülize edilmiştir.",
       "title": "Zerdeçal",

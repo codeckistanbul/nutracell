@@ -1,9 +1,23 @@
+@media (min-width: 1700px)
+  div.slick-slide
+    height: 700px!important
+
+
+@media (min-width: 1300px)
+  div.slick-slide
+    height: 580px
+
+
 @media (max-width: 1280px)
   p.second_benefits_text
     font-size: 12px
 
   p.benefits_text
     font-size: 12px
+
+@media (max-width: 1180px)
+  .benefits-images
+    display: none
 
 
 
@@ -66,6 +80,9 @@
       p
         padding: 0
 
+      div
+        padding-right: 0
+
 
 
 
@@ -74,11 +91,44 @@
     height: 550px
 
 @media (max-width: 480px)
+
+  .second-text
+    display: none
+
   div.content
     padding: 0 50px
 
   div.slick-slide
     height: 500px
 
+
+  div.video_cover
+    padding: 40px 0
+    display: flex
+    justify-content: center
+    div.text
+      align-self: center
+      p
+        font-size: 18px
+        text-align: center
+
+    div.watch_button_main
+      display: flex
+      justify-content: center
+      div.watch_now
+        font-size: 15px
+        text-align: center
+        padding: 15px
+        width: 250px
+
+
+    div.play_button
+      align-self: center
+      width: 73px
+      img
+        max-width: 20px
+
+  #ytplayer
+    height: 27vh!important
 
 
