@@ -6,7 +6,7 @@
         {% for slide in slider %}
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <div class="col-8 col-sm-5 d-flex justify-content-end" id="slide-image">
-                <img class="col-12 col-md-10" src="assets/img/slider-images/{{slide.image}}" alt="">
+                <img class="col-12 col-md-10" src="assets/img/slider-images/{{slide.image}}" style="{{slide.imgwidth}}"  alt="">
             </div>
             <div class="slide-text justify-content-center col-10 col-md-5">
                 <h3 class="text-center text-md-left">{{slide.title1}}</h3>
@@ -100,7 +100,7 @@
         </tr>
         {% endfor %}
     </table>
-    <span>* Değerler ortalama bir yetişkin referans alım düzeyini belirtir(2000kcal / 8700kj)</span>
+    <span class="features-note">* Değerler ortalama bir yetişkin referans alım düzeyini belirtir(2000kcal / 8700kj)</span>
 
 </section>
 {% endfor %}

@@ -209,21 +209,24 @@
       "title2": "Sağlıklı ve <span>Lezzetli!</span>",
       "title3": "Birbirinden sağlıklı ve lezzetli 3 yeni nesil içecek!",
       "aboutproduct": "Ürünler Hakkında",
-      "image": "drink-cans.png"
+      "image": "drink-cans.png",
+      "imgwidth": "max-width: 70%"
     },
     {
       "title1": "Nutracell L-Karnitin Kolajen ile",
       "title2": "Formunu Koru & Cildini Besle!",
       "title3": "L-Karnitinin Gücü ile Form'da Kal!",
       "aboutproduct": "L-Karnitin Hakkında",
-      "image": "girl.jpg"
+      "image": "girl.jpg",
+      "imgwidth": "max-width: 100%"
     },
     {
       "title1": "Nutracell Zerdeçal ile",
       "title2": "Bağışıklık Sistemini Destekle!",
       "title3": "AB-Fortis ile Güçlen",
       "aboutproduct": "Zerdeçal Hakkında",
-      "image": "happy-family.jpg"
+      "image": "happy-family.jpg",
+      "imgwidth": "max-width: 100%"
     }
   ]
 }
