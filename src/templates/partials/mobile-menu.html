@@ -1,0 +1,27 @@
+<div id="black-wrapper"></div>
+<section class="main flex-column align-items-center justify-content-between">
+    <div class="stick-main ">
+        <span class="stick"></span>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+        {% for navlinks in navbardinamic %}
+        <a class="mobile-links" href="{{navlinks.href}}">{{navlinks.text}}</a>
+        {% endfor %}
+        <div class="payment-and-login">
+            <a href="https://odeme.atakangida.com">{{navbar.tr.onlinepayment}}</a>
+            <a href="#!" id="login_btn">{{navbar.tr.customerlogin}}</a>
+        </div>
+    </div>
+    <div class="social-info d-flex flex-column align-items-center">
+        <div class="d-flex">
+            <a href="tel:{{phone}}">{{phone}}</a>
+            <a href="tel:{{phone}}">{{phone}}</a>
+        </div>
+        <p>©{{company}} Tüm Hakları Saklıdır.</p>
+        <div >
+            {% for links in socialmedia %}
+            <a href="{{socialmedia.href}}">{{socialmedia.text}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

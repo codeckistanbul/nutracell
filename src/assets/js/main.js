@@ -12,6 +12,27 @@ const watchNow = $('.watch_now');
 const playButton = $('.play_button');
 const videoCover = $('.video_cover');
 const video = $('#ytplayer');
+const blackWrapper = $('#black-wrapper');
+const hamburgerMenu = $('.mobile-menu');
+const menuItems = $('.main');
+const closeStick = $('.stick');
+const mobileLinks = $('.mobile-links');
+
+
+mobileLinks.click(function () {
+    blackWrapper.css('display','none')
+    menuItems.css('display','none')
+});
+
+hamburgerMenu.click(function () {
+    blackWrapper.css('display','block');
+    menuItems.css('display','flex')
+});
+
+closeStick.click(function () {
+    blackWrapper.css('display','none')
+    menuItems.css('display','none')
+});
 
 watchNow.click(function () {
     video.css('display','block');
