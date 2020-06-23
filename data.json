@@ -205,8 +205,9 @@
   ],
   "slider": [
     {
-      "title1": "Günlük ihtiyacını karşılayan Vitamin",
-      "title2": "Mineral ve <span>Protein deposu!</span>",
+      "title1": "Günlük ihtiyacını karşılayan",
+      "title2": "Vitamin Mineral ve <span>Protein deposu!</span>",
+      "text": "Vücudunu dinle ve ona destek ol! L-Karnitin, Kolajen ve Zerdeçalın yararlarını keşfet!",
       "title3": "Birbirinden sağlıklı ve lezzetli 3 yeni nesil içecek!",
       "aboutproduct": "Ürünler Hakkında",
       "image": "drink-cans.png",
@@ -220,7 +221,8 @@
       "aboutproduct": "L-Karnitin Hakkında",
       "image": "girl.jpg",
       "imgwidth": "max-width: 100%",
-      "href": "#karnitin"
+      "href": "#carnitin-benefits",
+      "text": "Vücuduna enerji üretimi, dayanıklılığının artması ve zayıflama konularında yardımcı olmak için L-Karnitin, cildinin esneklik ve canlılık kazanması için Kolajen ile onu besle!"
     },
     {
       "title1": "Nutracell Zerdeçal ile",
@@ -229,7 +231,8 @@
       "aboutproduct": "Zerdeçal Hakkında",
       "image": "happy-family.jpg",
       "imgwidth": "max-width: 100%",
-      "href": "#zerdecal"
+      "href": "#zerdecal-benefits",
+      "text": "Zerdaçalın güçlü antienflamatuar ve antioksidan etkisini keşfet. Günlük koşturmacada vücudunu unutma, bağışıklık sistemini güçlendir!"
     }
   ],
   "navbardinamic": [
