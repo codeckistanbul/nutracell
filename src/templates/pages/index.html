@@ -1,7 +1,7 @@
 {% extends "layouts/layout.index.html" %}
 {% block content %}
-<section class="slider container-fluid  align-items-center justify-content-center">
-    <div id="slider" >
+<section class="slider container-fluid">
+    <div id="slider">
         {% for slide in slider %}
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <div class="col-8 col-sm-5 d-flex justify-content-center" id="slide-image">
@@ -60,9 +60,11 @@
                 <h2 class="second-text">330ml(Kutu Boyutu)</h2>
             </div>
         </div>
-        <div class="product-values row justify-content-center justify-content-lg-start {{products.rotation}}">
+
+        <div class="d-block product-values row justify-content-center justify-content-lg-start {{products.rotation}}">
+            <div id="besin-deger">
             {% for value in product_values %}
-            <div class="d-flex align-items-center ">
+            <div class="inside d-flex align-items-center ">
                 <img src="assets/img/svg/product-images/{{value.image}}.svg" alt="">
                 <div>
                     <p>{{value.text}}</p>
@@ -70,6 +72,7 @@
                 </div>
             </div>
             {% endfor %}
+            </div>
         </div>
     </div>
     <div class="right-side ">
