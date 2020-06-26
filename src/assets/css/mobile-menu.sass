@@ -19,15 +19,10 @@ section.main
     margin-right: 7rem
 
     .stick
-      width: 25px
-      height: 5px
-      background-color: #fff
       position: relative
       z-index: 50
       right: 0
       top: 40px
-
-
 
 
 
@@ -50,11 +45,19 @@ section.main
     p
       margin: 10px 0
 
+.mobile-links
+  &:nth-child(7)
+    display: none
+
 
 @media (max-width: 575.98px)
   .payment-and-login
     display: flex!important
     flex-direction: column
     align-items: center
+
+  .mobile-links
+    &:nth-child(7)
+      display: block
 
 
