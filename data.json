@@ -30,7 +30,8 @@
     {
       "image": "product-man1",
       "text": "Enerji (kJ/kcal)",
-      "value": "39/9"
+      "value": "39/9",
+      "deneme": "active"
     },
     {
       "image": "product-man2",
@@ -261,7 +262,7 @@
       "text": "İletişim"
     },
     {
-      "href": "#contact",
+      "href": "https://iciniz.com/",
       "text": "Satın Al"
     }
   ]

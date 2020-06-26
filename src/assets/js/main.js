@@ -7,6 +7,12 @@ $('#slider').slick({
     speed: 1000,
     autoplaySpeed: 10000
 });
+$('#besin-degeri').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+
+});
 
 
 const watchNow = $('.watch_now');
